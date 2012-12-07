@@ -35,7 +35,10 @@
       "superagent": "lib/client.js"
     }
   },
-  "main": "lib/node",
+  "main": "index.js",
+  "shims": {
+    "./lib/index.js": "./lib/browser/client.js"
+  },
   "engines": {
     "node": "*"
   }
